@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/centstephen/IP_Repo/issues"
   },
-  "homepage": "https://github.com/centstephen/IP_Repo#readme"
+  "homepage": "https://github.com/centstephen/IP_Repo#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
