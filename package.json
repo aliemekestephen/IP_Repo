@@ -1,0 +1,24 @@
+{
+  "name": "studi_lounge",
+  "version": "1.0.0",
+  "description": "Academic Platform for Students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/centstephen/IP_Repo.git"
+  },
+  "keywords": [
+    "Confirm",
+    "to",
+    "commit"
+  ],
+  "author": "IP19 Group HSRW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/centstephen/IP_Repo/issues"
+  },
+  "homepage": "https://github.com/centstephen/IP_Repo#readme"
+}
