@@ -1,0 +1,26 @@
+.nav-custom {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.navbar-custom {
+  background-color: #463be7;
+}
+
+.border-bottoms {
+  border-bottom-color: #ffffff;
+}
+
+.text-custom {
+  color: #ffffff;
+}
+
+.nav-item-spacing {
+  padding-right: 25px;
+}
+
+.active {
+  color: #ffffff;
+  border-bottom: 1px;
+  border-color: #ffffff;
+}
