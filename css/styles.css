@@ -50,3 +50,8 @@ body {
   margin-left: 10px;
   height: 90px;
 }
+
+.img-max {
+  max-width: 100px;
+  width:100%;
+}

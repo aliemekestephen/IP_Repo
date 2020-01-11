@@ -1,10 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+    <!--Bootstrap CSS, font-awesome links-->
+    <link
+            rel="stylesheet"
+            href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+            rel="stylesheet"
+            href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navstyle.css" />
+
+    <title>Up&Grad</title>
+</head>
+
+<body>
+<nav
+        class="navbar navbar-dark navbar-custom navbar-light navbar-expand-sm fixed-top"
+>
+    <div class="container">
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#Navbar"
+                aria-controls="Navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item  nav-item-spacing">
+                    <a class="nav-link active  border-bottom" href="#"
+                    ><span class="fa fa-home fa-lg"></span
+                    ></a>
+                </li>
+                <li class="nav-item nav-item-spacing">
+                    <a class="nav-link text-custom" href="#"
+                    ><strong> About Us</strong></a
+                    >
+                </li>
+                <li class="nav-item nav-item-spacing">
+                    <a class="nav-link text-custom" href="#"
+                    ><strong> Pricing</strong></a
+                    >
+                </li>
+                <li class="nav-item nav-item-spacing">
+                    <a class="nav-link text-custom" href="#"
+                    ><strong> Downloads</strong></a
+                    >
+                </li>
+                <li class="nav-item nav-item-spacing nav-item dropdown">
+                    <a
+                            class="nav-link dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                    >Profile</a
+                    >
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="#">Posts</a>
+                        <a class="dropdown-item" href="#">info</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Sign out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <form class="form-inline">
+            <div class="md-form my-0">
+                <input
+                        class="form-control mr-sm-1"
+                        type="text"
+                        placeholder="Search"
+                        aria-label="Search"
+                />
+            </div>
+            <button
+                    class="btn btn-outline-light btn-md ml-0 my-sm-0"
+                    type="submit"
+            >
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">My Account</a>
+            <a class="dropdown-item" href="#">Posts</a>
+            <a class="dropdown-item" href="#">info</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Sign out</a>
+        </div>
+        </li>
+    </div>
+</nav>
+
+
+<div class="container-fluid main-container">
+
+    <div class="row">
+        <div class="col left-col">
+            First
+        </div>
+
+        <div class="col-7 middle-col"> <!--Middle column containing all the information-->
+            <div class="middle-col-content">
+
+                <div class="container-fluid">
+
+                    <div class="row row-content">
+                        <form class="form-inline" action="/action_page.php">
+                            <img src="https://i.pinimg.com/236x/3f/11/4a/3f114adc65911c26ba7398d9709db6a6.jpg" class="img-circle img-fluid img-max"/>
+                            <div class="form-group">
+                                <div class="custom-file" style="margin-left: 30px">
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                           aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" style="margin-left: 30px">Upload</button>
+                        </form>
+                    </div>
+
+                    <div class="row row-content">
+                        <div class="container-fluid"> <!--Container for the upper part of the column containing Picture and Information-->
+                            <div class="row">
+                                <div class="col-9"> <!--Personal information of user-->
+                                    <form action="/action_page.php">
+                                        <div class="container-fluid">
+                                            <h5 style="color: black;" class="font-weight-bold">Personal Information</h5>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="country">Country of Origin</label>
+                                                        <input class="form-control" id="country" placeholder="Unicorn Land" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="gender">Gender</label>
+                                                        <input class="form-control" id="gender" placeholder="Potato" readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="birthdate">Birth Date</label>
+                                                        <input class="form-control" id="birthdate" placeholder="99.99.9999" readonly>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="studycourse">Study Course</label>
+                                                        <input class="form-control" id="studycourse" placeholder="Something something engineering" readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row row-content">
+                        <div class="container-fluid">
+                            <form action="/action_page.php">
+                                <div class="row row-content">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pwd">Password:</label>
+                                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="email">Email:</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="col right-col">
+            Third
+        </div>
+    </div>
+
+
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
