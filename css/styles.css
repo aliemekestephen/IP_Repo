@@ -37,6 +37,10 @@ body {
   height: 200px;
 }
 
+.card-title {
+  color: #000000;
+}
+
 .middle-col2 {
   background: #5006cf;
   padding: 0%;
@@ -53,5 +57,5 @@ body {
 
 .img-max {
   max-width: 100px;
-  width:100%;
+  width: 100%;
 }
