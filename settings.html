@@ -128,13 +128,13 @@
 
                 <div class="container-fluid">
 
-                    <div class="row row-content">
+                    <div class="row row-content"> <!--Picture-->
                         <form class="form-inline" action="/action_page.php">
-                            <img src="https://i.pinimg.com/236x/3f/11/4a/3f114adc65911c26ba7398d9709db6a6.jpg" class="img-circle img-fluid img-max"/>
+                            <img src="https://i.pinimg.com/236x/3f/11/4a/3f114adc65911c26ba7398d9709db6a6.jpg" class="img-circle img-fluid img-max" style="margin-left: 60px"/>
                             <div class="form-group">
-                                <div class="custom-file" style="margin-left: 30px">
+                                <div class="custom-file" style="margin-left: 60px">
                                     <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                           aria-describedby="inputGroupFileAddon01">
+                                           aria-describedby="inputGroupFileAddon01" style="width: 500px">
                                     <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                                 </div>
                             </div>
@@ -143,31 +143,42 @@
                     </div>
 
                     <div class="row row-content">
-                        <div class="container-fluid"> <!--Container for the upper part of the column containing Picture and Information-->
+                        <div class="container-fluid"> <!--Personal information-->
                             <div class="row">
-                                <div class="col-9"> <!--Personal information of user-->
+                                <div class="col-9">
                                     <form action="/action_page.php">
                                         <div class="container-fluid">
                                             <h5 style="color: black;" class="font-weight-bold">Personal Information</h5>
                                             <div class="row">
                                                 <div class="col">
-                                                    <div class="form-group">
-                                                        <label class="font-weight-bold" style="color: black;" for="country">Country of Origin</label>
-                                                        <input class="form-control" id="country" placeholder="Unicorn Land" readonly>
+                                                    <div class="form-group"> <!--country-->
+                                                        <label for="sel1">Country of Origin</label>
+                                                        <select class="form-control" id="sel1">
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
                                                     </div>
-                                                    <div class="form-group">
-                                                        <label class="font-weight-bold" style="color: black;" for="gender">Gender</label>
-                                                        <input class="form-control" id="gender" placeholder="Potato" readonly>
+                                                    <div class="form-group"> <!--gender-->
+                                                        <label for="sel1">Gender</label>
+                                                        <select class="form-control" id="sel2">
+                                                            <option value="" selected disabled>Select your Gender</option>
+                                                            <option>Male</option>
+                                                            <option>Female</option>
+                                                            <option>Other</option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="form-group">
+                                                    <div class="form-group"> <!--birthday-->
                                                         <label class="font-weight-bold" style="color: black;" for="birthdate">Birth Date</label>
-                                                        <input class="form-control" id="birthdate" placeholder="99.99.9999" readonly>
+                                                        <input class="form-control" id="birthdate" placeholder="99.99.9999">
                                                     </div>
-                                                    <div class="form-group">
+
+                                                    <div class="form-group"> <!--study course-->
                                                         <label class="font-weight-bold" style="color: black;" for="studycourse">Study Course</label>
-                                                        <input class="form-control" id="studycourse" placeholder="Something something engineering" readonly>
+                                                        <input class="form-control" id="studycourse" placeholder="Something something engineering">
                                                     </div>
                                                 </div>
                                             </div>
@@ -182,33 +193,41 @@
 
                     <div class="row row-content">
                         <div class="container-fluid">
-                            <form action="/action_page.php">
-                                <div class="row row-content">
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <div class="row"> <!--Change password-->
+                                <div class="col-9">
+                                    <form action="/action_page.php">
+                                        <div class="container-fluid">
+                                            <h5 class="font-weight-bold" style="color: black;">Change Password</h5>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="password">New Password</label>
+                                                        <input class="form-control" type="password" id="password">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="password">Confirm Password</label>
+                                                        <input class="form-control" type="password" id="confirmpwd">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="form-group">
+                                                        <label class="font-weight-bold" style="color: black;" for="password">Old Password</label>
+                                                        <input class="form-control" type="password" id="oldpassword">
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="pwd">Password:</label>
-                                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                                        </div>
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <label for="email">Email:</label>
-                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                                        </div>
-                                    </div>
-
+                                    </form>
                                 </div>
 
-                            </form>
+                            </div>
 
                         </div>
                     </div>
 
+                    <div class="row row-content">
+                        <button type="button" class="btn btn-primary" style="margin-left: auto">Save Settings</button>
+                    </div>
                 </div>
 
             </div>
