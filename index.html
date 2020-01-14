@@ -25,6 +25,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navstyle.css" />
 
+    <!-- Linking the show/hide password script -->
+    <script src="showPassword.js"></script>
+
     <title>Up&Grad</title>
   </head>
 
@@ -75,7 +78,7 @@
                 role="button"
                 aria-haspopup="true"
                 aria-expanded="false"
-                >Profile</a
+                ><i class="fa fa-user"></i> Profile</a
               >
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="account.html">My Account</a>
@@ -87,7 +90,7 @@
                   data-toggle="modal"
                   data-target="#loginModal"
                   href="#"
-                  >Sign Up</a
+                  >Login</a
                 >
               </div>
             </li>
@@ -114,7 +117,7 @@
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-sm" role="content">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="content">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -127,44 +130,57 @@
             <form>
               <div class="form-row">
                 <div class="form-group col">
-                  <label class="sr-only" for="userEmail">Username</label>
                   <input
                     type="email"
-                    class="form-control form-control-sm mr-1"
+                    class="form-control form-control-md mr-1"
                     id="userEmail"
                     placeholder="Enter username"
                   />
                 </div>
               </div>
               <div class="form-row">
-                <div class="form-group col">
-                  <label class="sr-only" for="userPassword">Password</label>
+                <div class="form-group col input-group">
                   <input
                     type="password"
-                    class="form-control form-control-sm mr-1"
+                    class="form-control form-control-md mr-1"
                     id="userPassword"
                     placeholder="Enter password"
                   />
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <a href="#" class="text-dark" id="icon-click"
+                        ><i class="fa fa-eye" id="icon"></i
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="form-row">
-                <div class="col-sm-auto checkMargin">
+                <div class="col checkMargin">
                   <div class="form-check col">
                     <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label"> Remember me </label>
-                    <a class="sign-up-link" href=""><i>Forgot password?</i></a>
+                    <a class="sign-up-link" href=""
+                      ><span class="forgot-pass"
+                        ><i>Forgot password?</i></span
+                      ></a
+                    >
                   </div>
                 </div>
               </div>
               <div class="form-row">
                 <button
                   type="submit"
-                  class="btn btn-primary btn-block btn-sm ml-1"
+                  class="checkMargin btn btn-primary btn-block btn-md ml-1"
                 >
                   Sign in
                 </button>
               </div>
-              <a class="sign-up-link" href=""><i>Click here</i></a> to register
+              <div class="modal-footer">
+                Not registered?
+                <a class="sign-up-link" href="#"><i>Click here</i></a>
+                to Sign up
+              </div>
             </form>
           </div>
         </div>
@@ -237,8 +253,24 @@
     </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- The script for the hide/show password -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#icon-click").click(function() {
+          $("#icon").toggleClass("fa-eye-slash");
+
+          var input = $("#userPassword");
+          if (input.attr("type") === "password") {
+            input.attr("type", "text");
+          } else {
+            input.attr("type", "password");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

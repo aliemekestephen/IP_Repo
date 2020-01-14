@@ -43,7 +43,7 @@ body {
 }
 
 .checkMargin {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .middle-col2 {
@@ -82,4 +82,9 @@ body {
 
 .sign-up-link {
   color: #463be7;
+}
+
+.forgot-pass {
+  text-align: right;
+  float: right;
 }
