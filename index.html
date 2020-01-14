@@ -114,7 +114,7 @@
     </nav>
 
     <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="content">
+      <div class="modal-dialog modal-dialog-centered modal-sm" role="content">
         <!-- Modal content-->
         <div class="modal-content">
           <div class="modal-header">
@@ -126,43 +126,45 @@
           <div class="modal-body">
             <form>
               <div class="form-row">
-                <div class="form-group col-sm-4">
+                <div class="form-group col">
                   <label class="sr-only" for="userEmail">Username</label>
                   <input
                     type="email"
                     class="form-control form-control-sm mr-1"
                     id="userEmail"
-                    placeholder="Enter email"
+                    placeholder="Enter username"
                   />
                 </div>
-                <div class="form-group col-sm-4">
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
                   <label class="sr-only" for="userPassword">Password</label>
                   <input
                     type="password"
                     class="form-control form-control-sm mr-1"
                     id="userPassword"
-                    placeholder="Password"
+                    placeholder="Enter password"
                   />
                 </div>
-                <div class="col-sm-auto">
-                  <div class="form-check">
+              </div>
+              <div class="form-row">
+                <div class="col-sm-auto checkMargin">
+                  <div class="form-check col">
                     <input class="form-check-input" type="checkbox" />
                     <label class="form-check-label"> Remember me </label>
+                    <a class="sign-up-link" href=""><i>Forgot password?</i></a>
                   </div>
                 </div>
               </div>
               <div class="form-row">
                 <button
-                  type="button"
-                  class="btn btn-secondary btn-sm ml-auto"
-                  data-dismiss="modal"
+                  type="submit"
+                  class="btn btn-primary btn-block btn-sm ml-1"
                 >
-                  Cancel
-                </button>
-                <button type="submit" class="btn btn-primary btn-sm ml-1">
                   Sign in
                 </button>
               </div>
+              <a class="sign-up-link" href=""><i>Click here</i></a> to register
             </form>
           </div>
         </div>
