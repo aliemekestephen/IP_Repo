@@ -22,6 +22,12 @@ body {
   box-shadow: 0px 5px 20px grey;
 }
 
+.over img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 .middle-col-content {
   padding-left: 20px;
   padding-right: 20px;
@@ -32,10 +38,15 @@ body {
 }
 
 .middle-col1 {
-  background: #e1dee6;
   padding: 0%;
   margin-right: 10px;
-  height: 200px;
+  height: 250px;
+}
+
+.middle-col2 {
+  padding: 0%;
+  margin-left: 10px;
+  height: 250px;
 }
 
 .card-title {
@@ -44,13 +55,6 @@ body {
 
 .checkMargin {
   margin-bottom: 20px;
-}
-
-.middle-col2 {
-  background: #5006cf;
-  padding: 0%;
-  margin-left: 10px;
-  height: 200px;
 }
 
 .subjects {
