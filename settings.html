@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item  nav-item-spacing">
-                    <a class="nav-link active  border-bottom" href="#"
+                    <a class="nav-link active  border-bottom" href="index.html"
                     ><span class="fa fa-home fa-lg"></span
                     ></a>
                 </li>
@@ -78,7 +78,7 @@
                     >Profile</a
                     >
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">My Account</a>
+                        <a class="dropdown-item" href="account.html">My Account</a>
                         <a class="dropdown-item" href="#">Posts</a>
                         <a class="dropdown-item" href="#">info</a>
                         <div class="dropdown-divider"></div>
@@ -126,33 +126,36 @@
         <div class="col-7 middle-col"> <!--Middle column containing all the information-->
             <div class="middle-col-content">
 
-                <div class="container-fluid">
+                <div class="container">
 
                     <div class="row row-content"> <!--Picture-->
-                        <form class="form-inline" action="/action_page.php">
-                            <img src="https://i.pinimg.com/236x/3f/11/4a/3f114adc65911c26ba7398d9709db6a6.jpg" class="img-circle img-fluid img-max" style="margin-left: 60px"/>
-                            <div class="form-group">
-                                <div class="custom-file" style="margin-left: 60px">
-                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                           aria-describedby="inputGroupFileAddon01" style="width: 500px">
-                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        <div class="col-10">
+                            <form class="form-inline" action="/action_page.php">
+                                <img src="https://i.pinimg.com/236x/3f/11/4a/3f114adc65911c26ba7398d9709db6a6.jpg" class="img-circle img-fluid img-max" style="margin-left: 60px"/>
+                                <div class="form-group">
+                                    <div class="custom-file" style="margin-left: 60px">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                               aria-describedby="inputGroupFileAddon01" style="width: 500px">
+                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <button type="button" class="btn btn-primary" style="margin-left: 30px">Upload</button>
-                        </form>
+                                <button type="button" class="btn btn-primary upload-btn">Upload</button>
+                            </form>
+                        </div>
+
                     </div>
 
                     <div class="row row-content">
                         <div class="container-fluid"> <!--Personal information-->
                             <div class="row">
-                                <div class="col-9">
+                                <div class="col-10">
                                     <form action="/action_page.php">
                                         <div class="container-fluid">
                                             <h5 style="color: black;" class="font-weight-bold">Personal Information</h5>
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="form-group"> <!--country-->
-                                                        <label for="sel1">Country of Origin</label>
+                                                        <label class="font-weight-bold" style="color: black" for="sel1">Country of Origin</label>
                                                         <select class="form-control" id="sel1">
                                                             <option>1</option>
                                                             <option>2</option>
@@ -161,12 +164,12 @@
                                                         </select>
                                                     </div>
                                                     <div class="form-group"> <!--gender-->
-                                                        <label for="sel1">Gender</label>
+                                                        <label class="font-weight-bold" style="color: black" for="sel2">Gender</label>
                                                         <select class="form-control" id="sel2">
                                                             <option value="" selected disabled>Select your Gender</option>
-                                                            <option>Male</option>
-                                                            <option>Female</option>
-                                                            <option>Other</option>
+                                                            <option style="color: black">Male</option>
+                                                            <option style="color: black">Female</option>
+                                                            <option style="color: black">Other</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -194,24 +197,24 @@
                     <div class="row row-content">
                         <div class="container-fluid">
                             <div class="row"> <!--Change password-->
-                                <div class="col-9">
+                                <div class="col-10">
                                     <form action="/action_page.php">
                                         <div class="container-fluid">
-                                            <h5 class="font-weight-bold" style="color: black;">Change Password</h5>
+                                            <h5 class="font-weight-bold" style="color: black">Change Password</h5>
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="form-group">
-                                                        <label class="font-weight-bold" style="color: black;" for="password">New Password</label>
+                                                        <label class="font-weight-bold" style="color: black" for="password">New Password</label>
                                                         <input class="form-control" type="password" id="password">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="font-weight-bold" style="color: black;" for="password">Confirm Password</label>
+                                                        <label class="font-weight-bold" style="color: black" for="password">Confirm Password</label>
                                                         <input class="form-control" type="password" id="confirmpwd">
                                                     </div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="form-group">
-                                                        <label class="font-weight-bold" style="color: black;" for="password">Old Password</label>
+                                                        <label class="font-weight-bold" style="color: black" for="password">Old Password</label>
                                                         <input class="form-control" type="password" id="oldpassword">
                                                     </div>
                                                 </div>

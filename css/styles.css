@@ -63,3 +63,9 @@ body {
 .save-btn{
     width: 500px;
 }
+
+.upload-btn{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 30px;
+}
