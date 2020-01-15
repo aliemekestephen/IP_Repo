@@ -24,6 +24,8 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navstyle.css" />
+    <!-- include calendar.css-->
+    <link rel="stylesheet" href="css/calendar.css" />
 
     <!-- Linking the show/hide password script -->
     <script src="showPassword.js"></script>
@@ -31,7 +33,7 @@
     <title>Up&Grad</title>
   </head>
 
-  <body>
+  <body onload="RenderDate()">
     <nav
       class="navbar navbar-dark navbar-custom navbar-light navbar-expand-sm fixed-top"
     >
@@ -66,7 +68,7 @@
               >
             </li>
             <li class="nav-item nav-item-spacing">
-              <a class="nav-link text-custom" href="#"
+              <a class="nav-link text-custom" href="calendar.html"
                 ><strong> Downloads</strong></a
               >
             </li>
@@ -290,7 +292,39 @@
           </div>
         </div>
         <div class="col right-col">
-          Third
+          <div class="col rounded chat-content">
+            <h5 style="color: black; padding-top: 10px;">
+              Chats
+            </h5>
+          </div>
+          
+            <div class="calendar rounded">
+         <div class="month">
+            <div class="prev" onclick="moveDate('prev')">
+               <span>&#10094</span>
+            </div>
+            <div>
+               <h2 id="month">January</h2>
+               <p id="date_str"></p>
+            </div>
+            <div class="next" onclick="moveDate('next')">
+               <span>&#10095</span>
+            </div>
+         </div>
+         <div class="weekends">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+         </div>
+         <div class="days">
+            
+         </div>
+      </div>
+          
         </div>
       </div>
     </div>
@@ -299,6 +333,9 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- include calendar.js-->
+    <script src="js/calendar.js"></script>
 
     <!-- The script for the hide/show password -->
     <script type="text/javascript">
