@@ -85,6 +85,11 @@ body {
   width: 500px;
 }
 
+.add-post-btn {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .upload-btn {
   padding-left: 50px;
   padding-right: 50px;
@@ -107,6 +112,7 @@ body {
 
 .post-box {
   padding: 15px;
+  margin-top: 15px;
 }
 
 .hide-text{
